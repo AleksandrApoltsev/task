@@ -11,13 +11,13 @@ public class RandomuserApiTests {
         given()
                 .log().uri()
                 .queryParam("gender","female")
-                .queryParam("results","3")
+                .queryParam("results","2")
                 .when()
                 .get("https://randomuser.me/api/")
                 .then()
                 .log().status()
                 .log().body()
                 .statusCode(200)
-                .body("info.results", is(3));
+                .body("info.results", is(2));
     }
 }

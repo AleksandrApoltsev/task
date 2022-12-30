@@ -1,4 +1,4 @@
-package tasks.cleanUri;
+package tasks.cleanuri;
 
 import com.codeborne.xlstest.XLS;
 import org.junit.jupiter.api.Test;
